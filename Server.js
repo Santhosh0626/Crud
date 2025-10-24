@@ -16,9 +16,11 @@ const app = express();
 app.use(bodyparser.json())
 app.use(express.json());
 
-const PORT = 3001
-app.listen(PORT,()=>{
-    console.log("PORT is running on 5000")
-})
 
 app.use("/",Routes)
+
+const PORT = 3001
+app.listen(PORT,()=>{
+    console.log("PORT is running on 3001")
+})
+
